@@ -45,7 +45,6 @@ ul {
 
 /* header */
 #wrap {
-    border: 1px solid #000;
     width: 1200px;
     margin: 0 auto;
 }
@@ -81,7 +80,6 @@ ul {
     font-weight: bold;
 }
 #slide {
-    border: 1px solid #000;
     position: relative;
 }
 #slide span {
@@ -98,15 +96,94 @@ ul {
     transform: translate(-50%, -50%);
 }
 #contents {
-    border: 1px solid #000;
     height: 200px;
+}
+#contents>div:not(:first-child) {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    flex: 1;
+}
+#contents img {
+    width: 180px;
+}
+#bbs {
+    padding: 10px;
+}
+#bbs div {
+    padding: 10px;
+}
+#bbs > div > table {
+    margin-top: 10px;
+}
+#bbs > div > table td {
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+#bbs > div > table td:first-child {
+    padding-right: 40px;
+}
+#bbs > * {
+    border: 1px solid #aaa;
+}
+#bbs > .tabBtn {
+    font-size: 18px;
+    padding: 2px 8px;
+    position: relative;
+    top: 1px;
+}
+#bbs > button:first-child {
+    border-bottom-color: #eee;
+    margin-left: 20px;
+    left: 6px;
+}
+#bbs > button:nth-child(2) {
+    border-color: #eee;
+    border-bottom-color: #aaa;
+}
+#banner {
+
+}
+#shortcut {
+
 }
 #footerFrame{
     background-color: #0275bf;
 }
 #footer {
-    border: 1px solid #000;
     width: 1200px;
     height: 100px;
     margin: 0 auto;
+}
+#footerLogo {
+    height: 100px;
+    line-height: 100px;
+}
+#companyInfo {
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+#companyInfo > * {
+    height: 50px;
+    text-align: center;
+}
+#footerLNB {
+    position: relative;
+}
+#footerMainMenu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#footerMainMenu .footerMainLi {
+    padding: 0 30px;
+}
+#copyright {
+    line-height: 50px;
 }
